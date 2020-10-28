@@ -29,17 +29,17 @@ def arithmetic_arranger(problems, print_res = False):
     
     #Number can contain inly digits
     try:
-      int(eq[0])
-      int(eq[2])
+     x = int(eq[0])
+     y = int(eq[2])
     except ValueError:
       return "Error: Numbers must only contain digits."
 
     #Calculate results
     if print_res:
       if(eq[1]== "+"):
-        r = int(eq[0]) + int(eq[2])
+        r = x + y
       else:
-        r = int(eq[0]) - int(eq[2])
+        r = x - y
 
     l1 = len("  " + eq[0])
     l2 = len(eq[1]+" "+eq[2])
